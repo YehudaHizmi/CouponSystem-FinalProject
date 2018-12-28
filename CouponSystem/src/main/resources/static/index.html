@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+body {
+  height: 100vh;
+  background-image: url("https://st3.depositphotos.com/2466369/12514/v/950/depositphotos_125149378-stock-illustration-super-sale-banner-vector-design.jpg");
+     
+    background-attachment: fixed;
+    background-position: center; 
+}
+#login .container #login-row #login-column .login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 380px;
+  border: 1px solid #9C9C9C;
+  background-image: linear-gradient(to bottom, #aec1c3, #a9b5b7, #bcc5c6, #cfd5d5, #e3e5e5);
+  
+}
+#login .container #login-row #login-column .login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column .login-box #login-form #register-link {
+  margin-top: -85px;
+}
+</style>
+</head>
+<body>
+
+	<div id="login">    
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div class="login-box col-md-12">
+                    <form id="login-form" class="form"  action="http://localhost:8080/login" method="post">
+                        <h3 class="text-center">Coupon System</h3>
+                        <div class="form-group">
+                            <label for="username">Username:</label><br>
+                            <input type="text" name="name" id="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label><br>
+                            <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="clientType"><span><b>Client Type:</b></span></label>
+                            <label>
+      							<input type="radio" name="clientType" value="Admin" checked> Admin
+    						</label>
+    						<label class="radio-inline">
+      							<input type="radio" name="clientType" value="Company"> Company
+    						</label>
+    						<label class="radio-inline">
+      							<input type="radio" name="clientType" value="Customer"> Customer
+    						</label>                         
+                           	<br><br>
+                         <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">                                 
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+ <form action="http://localhost:8080/login" method="post">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <br>
+      <input type="radio" name="clientType" value="Admin" checked> Admin<br>
+	  <input type="radio" name="clientType" value="Company"> Company<br>
+	  <input type="radio" name="clientType" value="Customer"> Customer<br>  
+    <button type="submit">Login</button>  
+</form>
+--> 
+</body>
+</html>
